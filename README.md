@@ -5,6 +5,7 @@ This project is a **PostgreSQL-based implementation** of a modern data warehouse
 ---
 
 ##  Project Structure
+```
 datasets/
 ├── source_crm/
 │ ├── cust_info.csv
@@ -27,6 +28,7 @@ scripts/
 │ └── proc_load_silver.sql
 └── gold/
 └── ddl_gold.sql
+```
 
 tests/
 └── (testing scripts if applicable)
@@ -119,3 +121,4 @@ Run the init_db.bat file.
 
 # Credits
 Inspired by Baraa’s SQL Server Data Warehouse Project. This version is a fully re-implemented PostgreSQL pipeline—built from scratch with custom logic and improvements.
+
