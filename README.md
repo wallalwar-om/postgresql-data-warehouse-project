@@ -55,6 +55,7 @@ This project demonstrates the design and implementation of a **layered data ware
 ===============================================================================
 ## Data Warehouse Setup Script – Medallion Architecture
 
+```
 This script sets up a Data Warehouse using the **Medallion Architecture**,
 a layered data design pattern used in modern data engineering pipelines.
 
@@ -86,8 +87,8 @@ Execution Order:
 \i scripts/silver/ddl_silver.sql
 \i scripts/silver/proc_load_silver.sql
 \i scripts/gold/ddl_gold.sql
-===============================================================================
-*/
+```
+
 
 ##  Naming Conventions
 
@@ -168,6 +169,7 @@ Run the init_db.bat file.
 
 ### Credits
 Inspired by Baraa’s SQL Server Data Warehouse Project. This version is a fully re-implemented PostgreSQL pipeline—built from scratch with custom logic and improvements.
+
 
 
 
