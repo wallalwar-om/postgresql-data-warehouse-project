@@ -16,10 +16,7 @@ Parameters:
 Usage Example:
     CALL Silver.load_silver;
 ===============================================================================
-
-
-
-
+*/
 
 CREATE OR REPLACE PROCEDURE silver.load_silver()
 LANGUAGE plpgsql
