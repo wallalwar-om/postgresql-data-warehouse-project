@@ -3,6 +3,11 @@
 This project is a **PostgreSQL-based implementation** of a modern data warehouse using the **Medallion Architecture** (Bronze → Silver → Gold), inspired by [Baraa’s SQL Server Data Warehouse Project](https://github.com/DataWithBaraa/sql-data-warehouse-project).
 
 ---
+## Prerequisites
+- PostgreSQL 15+ installed and running
+- `psql` command-line tool available in PATH
+- Windows (for batch file) or ability to run SQL scripts manually
+- CSV files placed in the correct datasets/ folders
 
 ##  Project Structure
 ```
@@ -92,10 +97,12 @@ This project demonstrates the design and implementation of a **layered data ware
 
 ##  What I Learned
 
-- How to **adapt a data warehouse design** from SQL Server to PostgreSQL.
-- Implementing **ETL procedures with robust error handling** using PostgreSQL’s `EXCEPTION` blocks.
-- Designing **star schemas with fact and dimension tables** for analytical performance.
-- **Automating the entire pipeline** to make the process repeatable and low-effort.
+- Migrated a complete ETL pipeline design from SQL Server to PostgreSQL.
+- Built stored procedures with exception handling for reliable ETL execution.
+- Modeled fact and dimension tables for optimized analytical queries.
+- Automated end-to-end pipeline execution using batch scripting.
+
+
 
 ---
 
@@ -106,8 +113,11 @@ This project demonstrates the design and implementation of a **layered data ware
 init_db.bat
 
 # Or manually in PostgreSQL shell
+
 \i scripts/drop_create.sql
+\c your_database_name  -- reconnect to the newly created DB
 \i scripts/create_schema.sql
+
 \i scripts/bronze/ddl_bronze.sql
 \i scripts/bronze/proc_load_bronze.sql
 \i scripts/silver/ddl_silver.sql
@@ -118,7 +128,8 @@ init_db.bat
 Run the init_db.bat file.
 ```
 
-# Credits
+### Credits
 Inspired by Baraa’s SQL Server Data Warehouse Project. This version is a fully re-implemented PostgreSQL pipeline—built from scratch with custom logic and improvements.
+
 
 
