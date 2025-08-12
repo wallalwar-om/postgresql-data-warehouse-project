@@ -28,14 +28,13 @@ scripts/
 │ └── proc_load_silver.sql
 └── gold/
 └── ddl_gold.sql
-```
 
 tests/
 └── (testing scripts if applicable)
 
 README.md
 init_db.bat (Batch file to run all SQL scripts in sequence)
-
+```
 
 ##  Project Overview
 
@@ -121,4 +120,5 @@ Run the init_db.bat file.
 
 # Credits
 Inspired by Baraa’s SQL Server Data Warehouse Project. This version is a fully re-implemented PostgreSQL pipeline—built from scratch with custom logic and improvements.
+
 
